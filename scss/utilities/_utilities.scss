@@ -1,0 +1,30 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.mobilelogo {
+  width: size(125);
+  height: size(44);
+  @include flex-center;
+  overflow: hidden;
+
+  img {
+    @include wh100;
+    object-fit: contain;
+  }
+}
+
+.brandlogo {
+  width: size(125);
+  height: size(44);
+  @include flex-center;
+  overflow: hidden;
+
+  @include breakpoint(mobile768) {
+    height: size(64);
+  }
+
+  img {
+    @include wh100;
+    object-fit: contain;
+  }
+}
