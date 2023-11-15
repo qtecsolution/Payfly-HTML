@@ -23,7 +23,11 @@ section {
 
     .display-1 {
       line-height: 1.1;
-      letter-spacing: size(-3);
+      letter-spacing: size(-1);
+
+      @include breakpoint(tab992) {
+        letter-spacing: size(-3);
+      }
 
       .marked {
         letter-spacing: inherit;

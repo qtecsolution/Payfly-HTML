@@ -1123,7 +1123,12 @@ section {
 }
 .hero-details .display-1 {
   line-height: 1.1;
-  letter-spacing: -0.1875rem;
+  letter-spacing: -0.0625rem;
+}
+@media screen and (min-width: 62rem) {
+  .hero-details .display-1 {
+    letter-spacing: -0.1875rem;
+  }
 }
 .hero-details .display-1 .marked {
   letter-spacing: inherit;
