@@ -1,9 +1,9 @@
 @use "../global" as *;
 @use "../partials" as *;
 
-.mobilelogo {
-  width: size(125);
-  height: size(44);
+.brandlogo {
+  width: size(98);
+  height: size(24);
   @include flex-center;
   overflow: hidden;
 
@@ -13,18 +13,11 @@
   }
 }
 
-.brandlogo {
-  width: size(125);
-  height: size(44);
-  @include flex-center;
-  overflow: hidden;
+.marked {
+  color: $primary;
+  font-weight: 700;
+}
 
-  @include breakpoint(mobile768) {
-    height: size(64);
-  }
-
-  img {
-    @include wh100;
-    object-fit: contain;
-  }
+.display-1 {
+  letter-spacing: size(-3);
 }

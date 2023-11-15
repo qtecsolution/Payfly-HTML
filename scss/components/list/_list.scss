@@ -7,6 +7,7 @@
 
   @include breakpoint(tab992) {
     flex-direction: row;
+    gap: size(0);
   }
 
   &-link {
@@ -28,6 +29,28 @@
     @include hover {
       color: $primary;
       border-color: $primary;
+    }
+  }
+}
+
+.herolist {
+  @include list-vertical;
+  gap: size(16);
+
+  &-item {
+    @include flex-center-vert;
+    gap: size(16);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(18);
+      }
     }
   }
 }

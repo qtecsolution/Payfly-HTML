@@ -1,2 +1,44 @@
 @use "../global" as *;
 @use "../partials" as *;
+
+section {
+  min-height: 100vh;
+}
+
+.hero {
+  padding: size(32) size(0) size(64);
+
+  @include breakpoint(tab992) {
+    padding: size(64) size(0) size(124);
+  }
+
+  .display-1 {
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(24);
+
+    .details {
+      max-width: size(600);
+    }
+
+    .text {
+      color: $textdefault;
+      font-size: size(18);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.7;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(20);
+      }
+
+      @include breakpoint(desktop1920) {
+        font-size: size(24);
+      }
+    }
+  }
+}
