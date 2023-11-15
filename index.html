@@ -34,8 +34,89 @@
   <!-- PRELOADER-END -->
 
   <!-- HEADER-SECTION START -->
-  <header class="header sticky-top"></header>
+  <header class="header sticky-top py-3">
+    <div class="container">
+      <nav class="d-flex align-items-center justify-content-between">
+        <!-- HAMBURGER-MENU -->
+        <div class="d-lg-none d-block">
+          <button type="button" class="btn-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- MOBILE-MENU -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenu">
+          <div class="offcanvas-header">
+            <a href="index.html" class="brandlogo">
+              <img src="assets/images/logo/logo.svg" alt="BRAND-LOGO" />
+            </a>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="menulist">
+              <li class="menulist-item">
+                <a href="#hero" class="menulist-link">Home</a>
+              </li>
+              <li class="menulist-item">
+                <a href="#whypayfly" class="menulist-link">Why Payfly</a>
+              </li>
+              <li class="menulist-item">
+                <a href="#howitworks" class="menulist-link">How it works</a>
+              </li>
+              <li class="menulist-item">
+                <a href="#features" class="menulist-link">Features</a>
+              </li>
+              <li class="menulist-item">
+                <a href="#contact" class="menulist-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BRAND-LOGO -->
+        <a href="index.html" class="brandlogo">
+          <img src="assets/images/logo/logo.svg" alt="BRAND-LOGO" />
+        </a>
+
+        <!-- DESKKTOP-LIST -->
+        <div class="d-none d-lg-block">
+          <ul class="menulist">
+            <li class="menulist-item">
+              <a href="#hero" class="menulist-link">Home</a>
+            </li>
+            <li class="menulist-item">
+              <a href="#whypayfly" class="menulist-link">Why Payfly</a>
+            </li>
+            <li class="menulist-item">
+              <a href="#howitworks" class="menulist-link">How it works</a>
+            </li>
+            <li class="menulist-item">
+              <a href="#features" class="menulist-link">Features</a>
+            </li>
+            <li class="menulist-item">
+              <a href="#contact" class="menulist-link">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AUTH-BUTTON -->
+        <a href="#" class="btn-register">Register</a>
+      </nav>
+    </div>
+  </header>
   <!-- HEADER-SECTION END -->
+
 
 
   <!-- PRELOADER-JS -->

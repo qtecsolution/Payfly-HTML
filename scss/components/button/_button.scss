@@ -19,20 +19,48 @@ button,
 }
 
 .btn-hamburger {
-  @include square(24);
+  background: $white;
+  @include square(40);
+  @include border(solid, 2, $primary);
+  @include radius(4);
   @include flex-center;
   overflow: hidden;
-}
+  padding: size(8);
 
-.btn-submit {
-  @include setBgColor($primary, $white);
-  @include radius(8);
-  font-size: size(16);
-  font-weight: 700;
-  padding: size(12) size(8);
-  text-align: center;
+  svg {
+    path {
+      fill: $primary;
+    }
+  }
 
   @include hover {
-    @include setBgColor($danger, $white);
+    background: $primary;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.btn-register {
+  @include setBgColor($primary, $white);
+  @include border(solid, 2, $primary);
+  @include radius(6);
+  font-family: $secondaryfont;
+  font-size: size(15);
+  font-weight: 500;
+  line-height: 1;
+  padding: size(10) size(16);
+  text-align: center;
+  @include transitionsall;
+
+  @include breakpoint(desktop1200) {
+    padding: size(12) size(20);
+  }
+
+  @include hover {
+    @include setBgColor($white, $primary);
   }
 }

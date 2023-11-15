@@ -1,2 +1,33 @@
 @use "../../global" as *;
 @use "../../partials" as *;
+
+.menulist {
+  @include list-vertical;
+  gap: size(5);
+
+  @include breakpoint(tab992) {
+    flex-direction: row;
+  }
+
+  &-link {
+    color: $textdefault;
+    @include border-single(bottom, solid, 1.5, $textmuted);
+    font-size: size(14);
+    font-weight: 500;
+    line-height: 1.7;
+    @include flex-center-vert;
+    padding: size(0) size(0) size(5);
+    @include transitionscolor;
+
+    @include breakpoint(tab992) {
+      border-bottom: 0;
+      font-size: size(15);
+      padding: size(0) size(16);
+    }
+
+    @include hover {
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+}
