@@ -522,6 +522,87 @@ button:focus,
   color: hsl(167, 38%, 53%);
 }
 
+.btn-learnmore {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-learnmore .text {
+  color: hsl(167, 38%, 53%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.btn-learnmore .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 350ms ease-in-out;
+}
+.btn-learnmore:not([disabled]):hover .icon {
+  margin-left: 0.3125rem;
+}
+
+.cardpayfly {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.125rem rgba(90, 181, 161, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .cardpayfly {
+    padding: 1.5rem;
+  }
+}
+@media screen and (min-width: 120rem) {
+  .cardpayfly {
+    padding: 2rem;
+  }
+}
+.cardpayfly-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cardpayfly-header .cardicon {
+  background: hsl(156, 28%, 93%);
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+.cardpayfly-header .title {
+  color: hsl(252, 9%, 11%);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (min-width: 87.5rem) {
+  .cardpayfly-header .title {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 120rem) {
+  .cardpayfly-header .title {
+    font-size: 1.25rem;
+  }
+}
+.cardpayfly-body .cardtext {
+  color: hsl(252, 9%, 11%);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
 .header {
   background: hsl(0, 0%, 100%);
   border-bottom: solid 0.015625rem hsl(167, 38%, 53%);
@@ -921,28 +1002,36 @@ section {
 }
 
 .hero {
-  padding: 2rem 0rem 4rem;
+  padding: 6rem 0rem 4rem;
 }
 @media screen and (min-width: 62rem) {
   .hero {
-    padding: 4rem 0rem 7.75rem;
+    padding: 7.75rem 0rem;
   }
 }
-.hero .display-1 {
-  font-weight: 400;
-  line-height: 1.1;
+.hero .descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
 }
 .hero-details {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+.hero-details .display-1 {
+  line-height: 1.1;
+  letter-spacing: -0.1875rem;
+}
+.hero-details .display-1 .marked {
+  letter-spacing: inherit;
+}
 .hero-details .details {
   max-width: 37.5rem;
 }
 .hero-details .text {
   color: hsl(252, 9%, 11%);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.7;
@@ -956,6 +1045,72 @@ section {
   .hero-details .text {
     font-size: 1.5rem;
   }
+}
+.hero-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.whypayfly {
+  background: rgba(90, 181, 161, 0.05);
+  padding: 4rem 0rem 7.75rem;
+}
+@media screen and (min-width: 62rem) {
+  .whypayfly {
+    padding: 10rem 0rem 6rem;
+  }
+}
+.whypayfly-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+.whypayfly-details .display-3 {
+  letter-spacing: -0.12rem;
+  line-height: normal;
+}
+.whypayfly-details .display-3 .marked {
+  letter-spacing: inherit;
+}
+.whypayfly-details .details {
+  max-width: 35rem;
+}
+.whypayfly-details .text {
+  color: hsl(252, 9%, 11%);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.7;
+}
+@media screen and (min-width: 87.5rem) {
+  .whypayfly-details .text {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 120rem) {
+  .whypayfly-details .text {
+    font-size: 1.25rem;
+  }
+}
+.whypayfly-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.whypayfly-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .brandlogo {
@@ -976,8 +1131,4 @@ section {
 .marked {
   color: hsl(167, 38%, 53%);
   font-weight: 700;
-}
-
-.display-1 {
-  letter-spacing: -0.1875rem;
 }

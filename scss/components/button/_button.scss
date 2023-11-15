@@ -64,3 +64,28 @@ button,
     @include setBgColor($white, $primary);
   }
 }
+
+.btn-learnmore {
+  @include flex-center-vert;
+  gap: size(8);
+
+  .text {
+    color: $primary;
+    font-family: $secondaryfont;
+    font-size: size(15);
+    font-weight: 500;
+  }
+
+  .icon {
+    @include square(24);
+    @include flex-center;
+    overflow: hidden;
+    @include transitionsall;
+  }
+
+  @include hover {
+    .icon {
+      margin-left: size(5);
+    }
+  }
+}

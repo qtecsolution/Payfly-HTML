@@ -6,20 +6,29 @@ section {
 }
 
 .hero {
-  padding: size(32) size(0) size(64);
+  padding: size(96) size(0) size(64);
 
   @include breakpoint(tab992) {
-    padding: size(64) size(0) size(124);
+    padding: size(124) size(0);
   }
 
-  .display-1 {
-    font-weight: 400;
-    line-height: 1.1;
+  .descriptions {
+    @include flex-column;
+    gap: size(52);
   }
 
   &-details {
     @include flex-column;
     gap: size(24);
+
+    .display-1 {
+      line-height: 1.1;
+      letter-spacing: size(-3);
+
+      .marked {
+        letter-spacing: inherit;
+      }
+    }
 
     .details {
       max-width: size(600);
@@ -27,7 +36,7 @@ section {
 
     .text {
       color: $textdefault;
-      font-size: size(18);
+      font-size: size(16);
       font-style: normal;
       font-weight: 500;
       line-height: 1.7;
@@ -39,6 +48,69 @@ section {
       @include breakpoint(desktop1920) {
         font-size: size(24);
       }
+    }
+  }
+
+  &-thumbnail {
+    @include flex-center;
+    overflow: hidden;
+
+    img {
+      @include wh100;
+      object-fit: cover;
+    }
+  }
+}
+
+.whypayfly {
+  background: $secbg;
+  padding: size(64) size(0) size(124);
+
+  @include breakpoint(tab992) {
+    padding: size(160) size(0) size(96);
+  }
+
+  &-details {
+    @include flex-column;
+    gap: size(44);
+
+    .display-3 {
+      letter-spacing: size(-1.92);
+      line-height: normal;
+
+      .marked {
+        letter-spacing: inherit;
+      }
+    }
+
+    .details {
+      max-width: size(560);
+    }
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.7;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(18);
+      }
+
+      @include breakpoint(desktop1920) {
+        font-size: size(20);
+      }
+    }
+  }
+
+  &-thumbnail {
+    @include flex-center;
+    overflow: hidden;
+
+    img {
+      @include wh100;
+      object-fit: cover;
     }
   }
 }

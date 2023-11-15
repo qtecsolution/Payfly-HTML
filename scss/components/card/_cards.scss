@@ -1,2 +1,56 @@
-@use '../../global' as *;
-@use '../../partials' as *;
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.cardpayfly {
+  background: $white;
+  @include border(solid, 2, rgba($primary, 0.1));
+  @include radius(16);
+  @include flex-column;
+  gap: size(34);
+  padding: size(20);
+
+  @include breakpoint(desktop1400) {
+    padding: size(24);
+  }
+
+  @include breakpoint(desktop1920) {
+    padding: size(32);
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(16);
+
+    .cardicon {
+      background: $primarylight;
+      @include square(50);
+      @include circle;
+      @include flex-center;
+      overflow: hidden;
+      padding: size(16);
+    }
+
+    .title {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(18);
+      }
+
+      @include breakpoint(desktop1920) {
+        font-size: size(20);
+      }
+    }
+  }
+
+  &-body {
+    .cardtext {
+      color: $textdefault;
+      font-size: size(13);
+      font-weight: 500;
+    }
+  }
+}

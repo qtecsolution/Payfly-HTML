@@ -10,10 +10,13 @@ $primary: hsl(167, 38%, 53%); //#5BB5A2
 // BACKGROUND-COLORS
 $primarylight: hsl(156, 28%, 93%); //#E8F2EE
 $bgmuted: hsl(0, 0%, 97%); //#F8F8F8
+$secbg: rgba($primary, 0.05);
 
 // TEXT-COLORS
 $textdefault: hsl(252, 9%, 11%); //#1A191E
 $textmuted: rgba($textdefault, 0.5);
+
+$test: #5bb5a2;
 
 $danger: hsl(0, 91%, 54%); //#F51F1F
 
