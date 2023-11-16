@@ -974,6 +974,66 @@ input[type=search]::-webkit-search-results-decoration:focus {
 .tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
   border-right-color: hsl(167, 38%, 53%);
 }
+
+.footer {
+  padding: 3rem 0rem 2.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .footer {
+    padding: 6rem 0rem 2.5rem;
+  }
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .footer-content {
+    gap: 5rem;
+  }
+}
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-details .details {
+  max-width: 35.75rem;
+}
+.footer-details .details .text {
+  color: hsl(252, 9%, 11%);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-info-header .title {
+  color: hsl(252, 9%, 11%);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.03375rem;
+}
+.footer .copyright {
+  border-top: solid 0.0625rem hsl(0, 0%, 91%);
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer .copyright .textcopyright {
+  color: rgba(27, 26, 31, 0.5);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
 @keyframes pulsate {
   0% {
     transform: scale(0.75);
@@ -1191,6 +1251,28 @@ table tr td {
 }
 .contactlist-link:not([disabled]):hover .info .title {
   color: hsl(167, 38%, 53%);
+}
+
+.footerlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerlist-link {
+  color: rgba(27, 26, 31, 0.5);
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 350ms ease-in-out;
+}
+.footerlist-link:not([disabled]):hover {
+  color: hsl(167, 38%, 53%);
+  text-decoration: underline;
 }
 
 .customcheck .checkprivacy:checked ~ .checklabel::before {
@@ -1726,11 +1808,20 @@ section {
 }
 
 .contact {
-  padding: 5rem 0rem;
+  padding: 5rem 0rem 0rem;
 }
 @media screen and (min-width: 62rem) {
   .contact {
-    padding: 7.5rem 0rem;
+    padding: 7.5rem 0rem 0rem;
+  }
+}
+.contact-details {
+  border-bottom: solid 0.0625rem hsl(0, 0%, 91%);
+  padding: 0rem 0rem 5rem;
+}
+@media screen and (min-width: 62rem) {
+  .contact-details {
+    padding: 0rem 0rem 7.5rem;
   }
 }
 .contact .accordion {
@@ -1750,11 +1841,15 @@ section {
 .contact .accordion-item:first-of-type .accordion-button, .contact .accordion-item:last-of-type .accordion-button {
   border-radius: 0rem;
 }
+.contact .accordion-item:last-of-type {
+  border-bottom: 0;
+}
 .contact .accordion-button {
   color: hsl(252, 9%, 11%);
   font-family: "DM Sans", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
+  letter-spacing: -0.0375rem;
 }
 @media screen and (min-width: 87.5rem) {
   .contact .accordion-button {

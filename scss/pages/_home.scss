@@ -444,10 +444,19 @@ section {
 }
 
 .contact {
-  padding: size(80) size(0);
+  padding: size(80) size(0) size(0);
 
   @include breakpoint(tab992) {
-    padding: size(120) size(0);
+    padding: size(120) size(0) size(0);
+  }
+
+  &-details {
+    @include border-single(bottom, solid, 1, $borderdefault);
+    padding: size(0) size(0) size(80);
+
+    @include breakpoint(tab992) {
+      padding: size(0) size(0) size(120);
+    }
   }
 
   .accordion {
@@ -468,6 +477,10 @@ section {
           @include radius(0);
         }
       }
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
     }
 
     &-button {
@@ -475,6 +488,7 @@ section {
       font-family: $secondaryfont;
       font-size: size(18);
       font-weight: 500;
+      letter-spacing: size(-0.6);
 
       @include breakpoint(desktop1400) {
         font-size: size(20);

@@ -130,3 +130,22 @@
     }
   }
 }
+
+.footerlist {
+  @include list-vertical;
+  gap: size(16);
+
+  &-link {
+    color: $textmuted;
+    font-size: size(16);
+    font-weight: 500;
+    @include flex-center-vert;
+    @include w100;
+    @include transitionsall;
+
+    @include hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
