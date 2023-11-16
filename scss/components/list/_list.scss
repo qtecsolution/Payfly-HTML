@@ -83,3 +83,50 @@
     overflow: hidden;
   }
 }
+
+.contactlist {
+  @include list-vertical;
+  gap: size(24);
+
+  &-link {
+    @include flex-center-vert;
+    gap: size(16);
+
+    .icon {
+      background: $primarylight;
+      @include square(50);
+      @include circle;
+      @include flex-center;
+      overflow: hidden;
+      padding: size(14);
+    }
+
+    .info {
+      @include flex-column;
+
+      .title {
+        color: $textdefault;
+        font-family: $secondaryfont;
+        font-size: size(18);
+        font-weight: 500;
+        line-height: 1.4;
+        @include transitionscolor;
+      }
+
+      .text {
+        color: $textmuted;
+        font-size: size(14);
+        font-weight: 500;
+        line-height: 1.6;
+      }
+    }
+
+    @include hover {
+      .info {
+        .title {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

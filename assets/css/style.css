@@ -1147,6 +1147,52 @@ table tr td {
   overflow: hidden;
 }
 
+.contactlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contactlist-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contactlist-link .icon {
+  background: hsl(156, 28%, 93%);
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.875rem;
+}
+.contactlist-link .info {
+  display: flex;
+  flex-direction: column;
+}
+.contactlist-link .info .title {
+  color: hsl(252, 9%, 11%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 350ms ease-in-out;
+}
+.contactlist-link .info .text {
+  color: rgba(27, 26, 31, 0.5);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.contactlist-link:not([disabled]):hover .info .title {
+  color: hsl(167, 38%, 53%);
+}
+
 .customcheck .checkprivacy:checked ~ .checklabel::before {
   background: hsl(167, 38%, 53%);
   border-color: hsl(167, 38%, 53%);
@@ -1675,6 +1721,71 @@ section {
 }
 @media screen and (min-width: 87.5rem) {
   .allsolutions .herolist-item .text {
+    font-size: 1rem;
+  }
+}
+
+.contact {
+  padding: 5rem 0rem;
+}
+@media screen and (min-width: 62rem) {
+  .contact {
+    padding: 7.5rem 0rem;
+  }
+}
+.contact .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact .accordion-item {
+  border: none;
+  border-bottom: solid 0.0625rem hsl(0, 0%, 91%);
+  border-radius: 0rem;
+  padding-bottom: 2rem;
+}
+.contact .accordion-item:first-of-type, .contact .accordion-item:last-of-type {
+  border-radius: 0rem;
+}
+.contact .accordion-item:first-of-type .accordion-button, .contact .accordion-item:last-of-type .accordion-button {
+  border-radius: 0rem;
+}
+.contact .accordion-button {
+  color: hsl(252, 9%, 11%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 87.5rem) {
+  .contact .accordion-button {
+    font-size: 1.25rem;
+  }
+}
+.contact .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: hsl(252, 9%, 11%);
+  box-shadow: none;
+}
+.contact .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z' fill='%235BB5A2'/%3E%3C/svg%3E%0A");
+}
+.contact .accordion-button::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z' fill='%235BB5A2'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+}
+.contact .accordion-body {
+  padding: 0rem;
+  padding-top: 1rem;
+}
+.contact .accordion-body .text {
+  color: rgba(27, 26, 31, 0.5);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 87.5rem) {
+  .contact .accordion-body .text {
     font-size: 1rem;
   }
 }
