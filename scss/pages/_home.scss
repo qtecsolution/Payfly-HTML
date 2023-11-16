@@ -264,3 +264,65 @@ section {
     gap: size(16);
   }
 }
+
+.seemless {
+  padding: size(80) size(0) size(48);
+
+  @include breakpoint(tab992) {
+    padding: size(120) size(0) size(48);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(96);
+
+    @include breakpoint(desktop1400) {
+      gap: size(128);
+    }
+
+    @include breakpoint(desktop1920) {
+      gap: size(160);
+    }
+  }
+
+  .subtitle {
+    color: $textdefault;
+    font-family: $secondaryfont;
+    font-size: size(20);
+    font-weight: 500;
+  }
+
+  .display-3 {
+    color: $textdefault;
+  }
+
+  .details {
+    max-width: size(538);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(17);
+      }
+    }
+  }
+
+  .clients {
+    @include flex-center;
+    gap: size(16);
+    flex-wrap: wrap;
+
+    .client {
+      background: $bgmuted;
+      @include radius(10);
+      @include flex-center;
+      overflow: hidden;
+      padding: size(16);
+    }
+  }
+}

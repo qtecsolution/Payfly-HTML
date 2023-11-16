@@ -1429,6 +1429,70 @@ section {
   gap: 1rem;
 }
 
+.seemless {
+  padding: 5rem 0rem 3rem;
+}
+@media screen and (min-width: 62rem) {
+  .seemless {
+    padding: 7.5rem 0rem 3rem;
+  }
+}
+.seemless-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .seemless-content {
+    gap: 8rem;
+  }
+}
+@media screen and (min-width: 120rem) {
+  .seemless-content {
+    gap: 10rem;
+  }
+}
+.seemless .subtitle {
+  color: hsl(252, 9%, 11%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.seemless .display-3 {
+  color: hsl(252, 9%, 11%);
+}
+.seemless .details {
+  max-width: 33.625rem;
+}
+.seemless .details .text {
+  color: hsl(252, 9%, 11%);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 120rem) {
+  .seemless .details .text {
+    font-size: 1.0625rem;
+  }
+}
+.seemless .clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.seemless .clients .client {
+  background: hsl(0, 0%, 97%);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+
 .brandlogo {
   width: 6.125rem;
   height: 1.5rem;
