@@ -158,3 +158,41 @@
     }
   }
 }
+
+.cardnotify {
+  background: $bgmuted;
+  @include radius(10);
+  padding: size(16);
+  @include flex-center-vert;
+  gap: size(16);
+
+  &-icon {
+    background: $primary;
+    @include square(50);
+    @include radius(10);
+    @include flex-center;
+    overflow: hidden;
+    padding: size(12);
+  }
+
+  &-details {
+    .title {
+      color: $textdefault;
+      font-family: $secondaryfont;
+      font-size: size(20);
+      font-weight: 700;
+      letter-spacing: size(-0.599);
+    }
+
+    .text {
+      color: $textdefault;
+      font-size: size(14);
+      font-weight: 500;
+      line-height: 1.6;
+
+      @include breakpoint(desktop1400) {
+        font-size: size(16);
+      }
+    }
+  }
+}

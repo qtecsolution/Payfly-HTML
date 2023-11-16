@@ -54,3 +54,21 @@
     }
   }
 }
+
+.listnotify {
+  @include list-vertical;
+  gap: size(12);
+
+  &-item {
+    @include flex-center-vert;
+    gap: size(16);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+  }
+}
