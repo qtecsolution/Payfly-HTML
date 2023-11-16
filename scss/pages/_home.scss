@@ -393,3 +393,52 @@ section {
     }
   }
 }
+
+.allsolutions {
+  &-content {
+    background: $primary;
+    @include radius(20);
+    overflow: hidden;
+  }
+
+  .descriptions {
+    @include flex-column;
+    gap: size(32);
+  }
+
+  .display-3 {
+    letter-spacing: size(-1.92);
+  }
+
+  .details {
+    max-width: size(538);
+
+    .text {
+      color: $white;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @include breakpoint(desktop1920) {
+        font-size: size(18);
+      }
+    }
+  }
+
+  .herolist {
+    &-item {
+      .text {
+        color: $white;
+        font-size: size(14);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8;
+
+        @include breakpoint(desktop1400) {
+          font-size: size(16);
+        }
+      }
+    }
+  }
+}

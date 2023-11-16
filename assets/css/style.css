@@ -1638,6 +1638,47 @@ section {
   }
 }
 
+.allsolutions-content {
+  background: hsl(167, 38%, 53%);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.allsolutions .descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.allsolutions .display-3 {
+  letter-spacing: -0.12rem;
+}
+.allsolutions .details {
+  max-width: 33.625rem;
+}
+.allsolutions .details .text {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 120rem) {
+  .allsolutions .details .text {
+    font-size: 1.125rem;
+  }
+}
+.allsolutions .herolist-item .text {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 87.5rem) {
+  .allsolutions .herolist-item .text {
+    font-size: 1rem;
+  }
+}
+
 .brandlogo {
   width: 6.125rem;
   height: 1.5rem;
