@@ -1904,3 +1904,14 @@ section {
   color: hsl(167, 38%, 53%);
   font-weight: 700;
 }
+
+.parallax {
+  position: relative;
+  transform: translateY(3rem);
+  opacity: 1;
+  transition: 1s all ease;
+}
+.parallax.active {
+  transform: translateY(0);
+  opacity: 1;
+}

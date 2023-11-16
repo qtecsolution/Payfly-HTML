@@ -17,3 +17,15 @@
   color: $primary;
   font-weight: 700;
 }
+
+.parallax {
+  position: relative;
+  @include translateY(size(48));
+  opacity: 1;
+  transition: 1s all ease;
+
+  &.active {
+    @include translateY(0);
+    opacity: 1;
+  }
+}
