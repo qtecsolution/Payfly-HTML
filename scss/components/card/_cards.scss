@@ -196,3 +196,60 @@
     }
   }
 }
+
+.cardtestimonial {
+  @include border(solid, 2, $borderdefault);
+  @include radius(10);
+  @include flex-column;
+  gap: size(16);
+  padding: size(24);
+
+  @include breakpoint(desktop1400) {
+    padding: size(32);
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(4);
+
+    .title {
+      color: $textdefault;
+      letter-spacing: size(-0.84);
+
+      @include breakpoint(desktop1400) {
+        font-size: size(28);
+      }
+    }
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(16);
+    padding-bottom: size(8);
+
+    .text {
+      color: $textdefault;
+      font-size: size(16);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+  }
+
+  &-footer {
+    @include flex-column;
+
+    .author {
+      color: $textdefault;
+      font-family: $secondaryfont;
+      font-weight: 500;
+      font-size: size(18);
+    }
+
+    .designation {
+      color: $textmuted;
+      font-size: size(14);
+      font-weight: 500;
+    }
+  }
+}

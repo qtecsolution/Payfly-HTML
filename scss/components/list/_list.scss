@@ -72,3 +72,14 @@
     }
   }
 }
+
+.ratelist {
+  @include list-horizontal;
+  gap: size(4);
+
+  &-item {
+    @include square(20);
+    @include flex-center;
+    overflow: hidden;
+  }
+}

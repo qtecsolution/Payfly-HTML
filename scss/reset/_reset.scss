@@ -110,7 +110,7 @@ video {
 }
 
 body {
-  // @include setBgColor($white, $textprimary);
+  @include setBgColor($white, $textdefault);
   font-family: $primaryfont;
   font-size: size(16);
   font-style: normal;
@@ -126,7 +126,7 @@ h3,
 h4,
 h5,
 h6 {
-  // color: $headingtext;
+  color: $textdefault;
   margin: 0;
   font-family: $secondaryfont;
   text-wrap: balance;
@@ -185,6 +185,7 @@ select {
 .display-4,
 .display-5,
 .display-6 {
+  color: $textdefault;
   font-family: $secondaryfont;
 }
 
