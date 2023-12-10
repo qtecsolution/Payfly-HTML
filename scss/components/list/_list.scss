@@ -86,7 +86,13 @@
 
 .contactlist {
   @include list-vertical;
-  gap: size(24);
+  gap: size(12);
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: size(4);
+  }
 
   &-link {
     @include flex-center-vert;
