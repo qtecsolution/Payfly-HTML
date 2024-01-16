@@ -1106,6 +1106,38 @@ table tr td {
   vertical-align: middle;
 }
 
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contactform .inputbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contactform .inputbox .inputlabel {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contactform .inputbox .inputfield {
+  border: solid 0.0625rem hsl(0, 0%, 91%);
+  color: hsl(0, 0%, 0%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 2.75rem;
+  padding-inline: 1rem;
+}
+.contactform .inputbox .inputfield::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contactform .inputbox .inputfield::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .menulist {
   margin: 0;
   padding: 0;
@@ -1886,7 +1918,7 @@ section {
 }
 
 .brandlogo {
-  width: 6.125rem;
+  width: 4.125rem;
   height: 1.5rem;
   display: flex;
   align-items: center;

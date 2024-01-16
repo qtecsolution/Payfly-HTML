@@ -2,7 +2,7 @@
 @use "../partials" as *;
 
 .brandlogo {
-  width: size(98);
+  width: size(66);
   height: size(24);
   @include flex-center;
   overflow: hidden;

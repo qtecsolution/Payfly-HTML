@@ -41,8 +41,7 @@
       <nav class="d-flex align-items-center justify-content-between">
         <!-- HAMBURGER-MENU -->
         <div class="d-lg-none d-block">
-          <button type="button" class="btn-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu">
+          <button type="button" class="btn-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
             </svg>
@@ -57,10 +56,8 @@
             </a>
 
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
-                viewBox="0 0 16 16">
-                <path
-                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
               </svg>
             </button>
           </div>
@@ -73,7 +70,7 @@
               <li class="menulist-item">
                 <a href="#whypayfly" class="menulist-link">Why Payfly</a>
               </li>
-              <li class="menulist-item">
+              <li class="menulist-item d-none">
                 <a href="#howitworks" class="menulist-link">How it works</a>
               </li>
               <li class="menulist-item">
@@ -100,7 +97,7 @@
             <li class="menulist-item">
               <a href="#whypayfly" class="menulist-link">Why Payfly</a>
             </li>
-            <li class="menulist-item">
+            <li class="menulist-item d-none">
               <a href="#howitworks" class="menulist-link">How it works</a>
             </li>
             <li class="menulist-item">
@@ -135,7 +132,7 @@
 
                     <div class="details">
                       <p class="text">
-                        Your Gateway to Seamless Payments Across Asia,
+                        Your Gateway to Seamless Payments Across Bangladesh, India, Pakistan, Asia,
                         Latin America, Japan, South Korea, and the CIS!
                       </p>
                     </div>
@@ -146,12 +143,9 @@
                       <ul class="herolist">
                         <li class="herolist-item">
                           <span class="icon">
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="26" height="26" rx="13" fill="#E8F2EE" />
-                              <path
-                                d="M11.5 15.3789L18.394 8.48413L19.4552 9.54463L11.5 17.4999L6.72699 12.7269L7.78749 11.6664L11.5 15.3789Z"
-                                fill="#5BB5A2" />
+                              <path d="M11.5 15.3789L18.394 8.48413L19.4552 9.54463L11.5 17.4999L6.72699 12.7269L7.78749 11.6664L11.5 15.3789Z" fill="#5BB5A2" />
                             </svg>
                           </span>
 
@@ -401,7 +395,7 @@
   <!-- WHY-PAYFLY END -->
 
   <!-- INSTANT-MONEY START -->
-  <section class="instantmoney parallax">
+  <section class="instantmoney parallax d-none">
     <div class="container">
       <div class="instantmoney-content">
         <div class="row g-0">
@@ -598,7 +592,7 @@
   <!-- INSTANT-MONEY END -->
 
   <!-- HOW-IT-WORKS START -->
-  <section id="howitworks" class="howitworks parallax">
+  <section id="howitworks" class="howitworks parallax d-none">
     <div class="howitworks-content">
       <div class="container">
         <div class="row col-lg-6 col-md-10 mx-md-auto">
@@ -683,7 +677,7 @@
   <!-- HOW-IT-WORKS END -->
 
   <!-- FEATURES-START -->
-  <section id="features" class="features parallax">
+  <section id="features" class="features parallax d-none">
     <div class="container">
       <div class="row g-0">
         <div class="col-lg-10 mx-lg-auto">
@@ -1686,93 +1680,116 @@
               </div>
 
               <div class="col-lg-7">
-                <div class="accordion" id="accordionFaq">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                        What is Payfly?
-                      </button>
-                    </h2>
-
-                    <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
-                      <div class="accordion-body">
-                        <p class="text">
-                          Absolutely. Payfly prioritizes your security with a non-custodial system,
-                          robust encryption, and adherence to strict regulatory compliance.
-                        </p>
-                      </div>
-                    </div>
+                <form class="contactform">
+                  <div class="inputbox">
+                    <label for="companyname" class="inputlabel">Company Name</label>
+                    <input type="text" id="companyname" class="inputfield" placeholder="Enter company name" />
                   </div>
 
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                        How is Payfly different from other payment platforms?
-                      </button>
-                    </h2>
-
-                    <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
-                      <div class="accordion-body">
-                        <p class="text">
-                          Absolutely. Payfly prioritizes your security with a non-custodial system,
-                          robust encryption, and adherence to strict regulatory compliance.
-                        </p>
-                      </div>
-                    </div>
+                  <div class="inputbox">
+                    <label for="companymail" class="inputlabel">Email Address</label>
+                    <input type="email" id="companymail" class="inputfield" placeholder="Enter email address" />
                   </div>
 
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                        What regions does Payfly support?
-                      </button>
-                    </h2>
-
-                    <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
-                      <div class="accordion-body">
-                        <p class="text">
-                          Absolutely. Payfly prioritizes your security with a non-custodial system,
-                          robust encryption, and adherence to strict regulatory compliance.
-                        </p>
-                      </div>
-                    </div>
+                  <div class="inputbox">
+                    <label for="phonenumber" class="inputlabel">Phone Number</label>
+                    <input type="tel" id="phonenumber" class="inputfield" placeholder="Enter phone number"/>
                   </div>
 
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                        Is Payfly secure?
-                      </button>
-                    </h2>
+                  <div class="submitbox">
+                    <button class="btn-register w-100">Submit</button>
+                  </div>
+                </form>
 
-                    <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
-                      <div class="accordion-body">
-                        <p class="text">
-                          Absolutely. Payfly prioritizes your security with a non-custodial system,
-                          robust encryption, and adherence to strict regulatory compliance.
-                        </p>
+                <div class="d-none">
+                  <div class="accordion" id="accordionFaq">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                          What is Payfly?
+                        </button>
+                      </h2>
+  
+                      <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                          <p class="text">
+                            Absolutely. Payfly prioritizes your security with a non-custodial system,
+                            robust encryption, and adherence to strict regulatory compliance.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                        How can I get in touch with Payfly customer support?
-                      </button>
-                    </h2>
-
-                    <div id="collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
-                      <div class="accordion-body">
-                        <p class="text">
-                          Absolutely. Payfly prioritizes your security with a non-custodial system,
-                          robust encryption, and adherence to strict regulatory compliance.
-                        </p>
+  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                          How is Payfly different from other payment platforms?
+                        </button>
+                      </h2>
+  
+                      <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                          <p class="text">
+                            Absolutely. Payfly prioritizes your security with a non-custodial system,
+                            robust encryption, and adherence to strict regulatory compliance.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                          What regions does Payfly support?
+                        </button>
+                      </h2>
+  
+                      <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                          <p class="text">
+                            Absolutely. Payfly prioritizes your security with a non-custodial system,
+                            robust encryption, and adherence to strict regulatory compliance.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                          Is Payfly secure?
+                        </button>
+                      </h2>
+  
+                      <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                          <p class="text">
+                            Absolutely. Payfly prioritizes your security with a non-custodial system,
+                            robust encryption, and adherence to strict regulatory compliance.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                          How can I get in touch with Payfly customer support?
+                        </button>
+                      </h2>
+  
+                      <div id="collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                        <div class="accordion-body">
+                          <p class="text">
+                            Absolutely. Payfly prioritizes your security with a non-custodial system,
+                            robust encryption, and adherence to strict regulatory compliance.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
