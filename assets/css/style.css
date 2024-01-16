@@ -1087,14 +1087,14 @@ input[type=search]::-webkit-search-results-decoration:focus {
   animation: rotate 2s infinite linear;
 }
 .preloader .payment-loader .payment-circle .loadericon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  top: -0.25em;
+  top: 0;
   animation: pulsate 1.25s infinite ease;
 }
 

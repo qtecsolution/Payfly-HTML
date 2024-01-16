@@ -72,11 +72,11 @@
       }
 
       .loadericon {
-        @include square(20);
+        @include square(36);
         @include flex-center;
         overflow: hidden;
         position: relative;
-        top: -0.25em;
+        top: 0;
         @include animation(pulsate 1.25s infinite ease);
       }
     }
