@@ -268,9 +268,9 @@ section {
 .seemless {
   padding: size(80) size(0) size(48);
 
-  @include breakpoint(tab992) {
-    padding: size(120) size(0) size(48);
-  }
+  // @include breakpoint(tab992) {
+  //   padding: size(120) size(0) size(48);
+  // }
 
   &-content {
     @include flex-column;
@@ -330,9 +330,9 @@ section {
 .bridgescontinents {
   padding: size(80) size(0) size(48);
 
-  @include breakpoint(tab992) {
-    padding: size(120) size(0) size(48);
-  }
+  // @include breakpoint(tab992) {
+  //   padding: size(120) size(0) size(48);
+  // }
 
   &-content {
     @include flex-column;

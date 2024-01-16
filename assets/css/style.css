@@ -1674,11 +1674,6 @@ section {
 .seemless {
   padding: 5rem 0rem 3rem;
 }
-@media screen and (min-width: 62rem) {
-  .seemless {
-    padding: 7.5rem 0rem 3rem;
-  }
-}
 .seemless-content {
   display: flex;
   flex-direction: column;
@@ -1737,11 +1732,6 @@ section {
 
 .bridgescontinents {
   padding: 5rem 0rem 3rem;
-}
-@media screen and (min-width: 62rem) {
-  .bridgescontinents {
-    padding: 7.5rem 0rem 3rem;
-  }
 }
 .bridgescontinents-content {
   display: flex;
@@ -1951,4 +1941,4 @@ section {
 .parallax.active {
   transform: translateY(0);
   opacity: 1;
-}/*# sourceMappingURL=style.css.map */
+}
