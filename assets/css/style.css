@@ -1673,6 +1673,7 @@ section {
 
 .seemless {
   padding: 5rem 0rem 3rem;
+  min-height: auto;
 }
 .seemless-content {
   display: flex;

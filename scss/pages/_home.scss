@@ -267,6 +267,7 @@ section {
 
 .seemless {
   padding: size(80) size(0) size(48);
+  min-height: auto;
 
   // @include breakpoint(tab992) {
   //   padding: size(120) size(0) size(48);
